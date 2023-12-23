@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="js.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="div--header">
+        <div class="header-text-1 noselect">Как играть?</div>
+        <div class="header-text-2 noselect">Вход</div>
+        <div class="header-text-3 noselect">Запуск игры</div>
+      </div>
+      <form action="allow.php" method="post"></form>
+    </header>
+    <section class="section--1">
+      <div class="lobby">
+        <div class="mainText">
+          <h1 class="h1">Тайный санта</h1>
+          <h3 class="h3">Укрась свои новогодние праздники</h3>
+        </div>
+        <div class="buttons">
+          <div class="div--button">
+            <div class="button">
+              <button class="button--inside">
+                <span class="buttonText">Зарегистрироваться</span>
+              </button>
+            </div>
+          </div>
+          <div class="div--button">
+            <div class="button2">
+              <button class="button--inside">
+                <span class="buttonText">Войти</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--2" data-set="2">
+      <div class="section--2--div">
+        <h1 class="text--section--2">Как играть в тайного санту?</h1>
+        <p class="paragraph--section--2">
+          Тайный санта - самый просто способ поздравить друга в большой компании
+        </p>
+        <br />
+        <p class="paragraph--section--2--2">
+          С помощью нашего веб-приложения, вы сможете автоматически
+        </p>
+        <p class="paragraph--section--2--3">
+          провести жеребьевку и насладиться этой игрой!
+        </p>
+      </div>
+      <div class="section--2--div--2">
+        <img
+          src="1514310389167437951.png"
+          style="transform: translate(300px, 100px)"
+        />
+        <h1 class="text--section--2--2">
+          <span style="color: red">СТАНЬ</span> ИНИЦИАТОРОМ ИГРЫ!
+        </h1>
+        <div class="lets-Start">
+          <p1 class="lets-Start-1">Что надо делать?</p1>
+          <br />
+          <p1 class="lets-Start-2"
+            >Заполни все поля и нажми
+            <span class="get-ready">“Готово”</span></p1
+          >
+          <br />
+          <p1 class="lets-Start-3"
+            >Твой email - логин, сообщи его с паролем своим друзьям</p1
+          >
+        </div>
+      </div>
+      <form class="register">
+        <div class="buttons--selectors">
+          <input
+            type="name"
+            name="name"
+            class="form--name"
+            placeholder="Введите ваше имя"
+          />
+          <input
+            type="email"
+            name="email"
+            class="form--email"
+            placeholder="Введите ваш email"
+          />
+          <input
+            type="password"
+            name="password"
+            class="form--pass"
+            placeholder="Введите ваш пароль"
+          />
+          <input type="submit" class="form--sub" value="Ввод" />
+          <!-- <span class="getting--time">Выберите, когда начнется игра в часах</span><br> -->
+          <!-- <div id="output"></div> -->
+        </div>
+        <p
+          style="
+            font-family: 'Rubik One';
+            font-size: 30px;
+            color: #3f4778;
+            transform: translate(75px, 100px);
+          "
+        >
+          ИЛИ
+        </p>
+      </form>
+    </section>
+    <section class="section--3" data-set="3">
+      <h1 class="join-friends--h1">
+        <span style="color: red">ПРИСОЕДИНЯЙСЯ</span> К СВОИМ ДРУЗЬЯМ!
+      </h1>
+      <h2
+        class="join-friends"
+        style="margin-top: 100px; margin-left: 130px; font-size: 30px"
+      >
+        Вводи данные в поля ниже!
+      </h2>
+      <form class="form--2">
+        <div class="buttons--selectors--2">
+          <input
+            type="name"
+            name="name"
+            class="form--name--2"
+            placeholder="Введите ваше имя"
+          />
+          <input
+            type="email"
+            name="email"
+            class="form--email--2"
+            placeholder="Введите ваш email"
+          />
+          <input
+            type="password"
+            name="password"
+            class="form--pass--2"
+            placeholder="Введите пароль"
+          />
+          <input
+            type="email"
+            name="login"
+            class="form--login--2"
+            placeholder="Email создателя"
+          />
+          <input
+            type="submit"
+            class="form--sub--2"
+            value="Ввод"
+            onclick="myfunction_clickevent()"
+          />
+        </div>
+      </form>
+    </section>
+
+    <section class="start">
+      <h1 class="start--button"><span style="color: red">НАЧАТЬ</span> ИГРУ</h1>
+      <form class="gameStarter">
+        <div class="btns">
+          <input
+            type="email"
+            name="login"
+            placeholder="Почта организатора"
+            class="start-email"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Пароль"
+            class="start-pass"
+          />
+          <input type="submit" name="submit" value="Начать" class="start-sub" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="section--4">
+      <h1 class="h1--presents">СПАСИБО, ЧТО ВЫБРАЛИ НАС</h1>
+    </footer>
+  </body>
+</html>

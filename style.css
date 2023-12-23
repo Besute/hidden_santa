@@ -1,0 +1,289 @@
+
+body {
+  background-color: #e8ebfe;
+  background-image: url('snapedit_1703266594764-NEW.png');
+  background-repeat: no-repeat;
+  background-size: 100%, 10%;
+  overflow-x: hidden;
+}
+
+.noselect {
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+  }
+.lobby {
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+@font-face {
+  font-family: "RubikWetPaint Regular";
+  src: local("RubikWetPaint-Regular"),
+    url("RubikWetPaint-Regular.ttf");
+}
+@font-face {
+    font-family: "Rubik One";
+    src: local("RubikOne-Regular"),
+      url("RubikOne-Regular.ttf");
+  }
+.h3 {
+  transform: translateX(-25px);
+  font-size: 35px;
+  position: relative;
+  font-family: 'Rubik One';
+}
+.h1 {
+  font-family: "RubikWetPaint Regular";
+  font-size: 100px;
+  transform: translate(-30px, 45px);
+
+}
+.button--inside{   
+    width: 500px;
+    height: 50px;  
+    border-radius: 20px;
+    border-color: #3b4276;
+    background-color: #3b4276;    
+    border: none;
+    
+}
+.button{
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(250px, 80px);
+    background-color: #FF3E3E;
+
+}
+.buttonText {
+    font-size: 30px;
+    font-family: 'Rubik One' ;
+    color: white;
+}
+.button2{
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(1050px, 80px);
+    background-color: #FF3E3E;
+    
+}
+.div--button {
+    position: absolute;
+    transform: translateY(200px);
+}
+.register {
+    position: absolute;
+    transform: translate(500px, -100px);
+}
+
+header {
+    width: 101%;
+    border: #1f223d solid;
+    background-color: #1f223d;
+    transform: translate(-10px,-10px);
+    position: sticky;
+    z-index: 2;
+    top: 0%
+}
+.header-text-1 {
+    position: relative;
+    color: white;
+    transform: translate(300px, 35px);
+    font-family: 'Rubik One' ;
+    font-size: 30px;;
+}
+.header-text-2{
+    color: white;
+    transform: translate(900px);
+    font-family: 'Rubik One' ;
+    font-size: 30px;
+}
+.header-text-3{
+    color: white;
+    transform: translate(1350px, -40px);
+    font-family: 'Rubik One' ;
+    font-size: 30px;
+}
+
+.header-text-1:active, .header-text-2:active, .header-text-3:active {
+    color: grey;
+}  
+.mainText {
+    transform: translateY(-50px);
+    text-shadow: -2px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000
+}
+.text--section--2{
+    transform: translate(300px);
+    width: 50%;
+}
+.section--2{
+    transform: translate(300px, 600px);
+    width: 65%;
+}
+.section--2--div {
+    color: #3b4276;
+    font-size: 25px;
+    font-family: 'Rubik One';
+    width: 120%;
+}
+.paragraph--section--2 {
+    transform: translateX(50px);
+}
+.paragraph--section--2--2{
+    transform: translate(130px, -70px); 
+}
+.paragraph--section--2--3 {
+    transform: translate(240px, -80px); 
+}
+.active {
+    width: 500px;
+    height: 50px;  
+    border-radius: 20px;
+    border-color: #1f223d;
+    background-color: #1f223d;    
+    border: none;
+}
+.text--section--2--2{
+    text-align: center;
+}
+.section--2--div--2{
+    font-family: 'Rubik One';
+    color: #3b4276;
+    position: relative;
+    font-size: 150%;
+    transform: translateY(-150px);
+}
+.header-text-1{
+    width: 15%;
+}
+.header-text-2{
+    width: 10%;
+}
+.header-text-3{
+    width: 12%;
+}
+.lets-Start{
+    font-family: 'Rubik One';
+    font-size: 30px;
+}
+.get-ready{
+    color: red;
+
+}
+.lets-Start-1{
+    margin-left: 470px;
+}
+.lets-Start-2{
+    margin-left: 330px;
+}
+.lets-Start-3{
+    margin-left: 150px;
+}
+.buttons--selectors{      
+    display: flex;  
+    flex-direction: row;
+    transform: translateX(-150px);
+}
+.form--name,  .form--pass, .form--email, .form--sub, .form--login {
+    width: 500px; 
+    font-size: 25px;
+    background-color: #3F4778;
+    font-family: 'Rubik One';
+    color: white;
+    text-align: center;
+    position: relative;
+    transform: translate(-500px);
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.form--sub {
+    background-color: red;
+    border-color: red;
+    transform: translate(-1510px, 100px);
+    border-radius: 15px;
+}
+.join-friends{
+    font-family: 'Rubik One';
+    color: #3F4778;
+    position: absolute;
+    transform: translate(550px, 700px);
+    font-size: 40px;
+}
+.join-friends--h1{
+    font-family: 'Rubik One';
+    color: #3F4778;
+    position: absolute;
+    transform: translate(550px, 700px);
+    font-size: 40px;
+}
+
+.buttons--selectors--2{
+    transform: translate(200px, 900px);
+    display: flex;    
+}
+.form--name--2,  .form--pass--2, .form--email--2, .form--login--2,.form--sub--2 {
+    width: 500px; 
+    font-size: 25px;
+    background-color: #3F4778;
+    font-family: 'Rubik One';
+    color: white;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+}
+.form--sub--2{
+    background-color: red;
+    border-color: red;
+    transform: translate(-950px, 100px);
+    font-family: 'Rubik One';
+    font-size: 25px;
+    color: white;
+    border-radius: 15px; 
+}
+.h1--presents {
+    font-size: 40px;
+    font-family: 'Rubik One';
+    color: #3F4778;
+    position: absolute;
+    transform: translate(550px, 1200px);
+}
+.start--button{
+    position: absolute;
+    transform: translate(770px, 1000px);
+    font-size: 40px;
+    font-family: 'Rubik One';
+    color: #3F4778;
+    border-radius: 15px;
+}
+.gameStarter{
+    transform: translate(700px, 1100px);
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+
+}
+.start-email, .start-pass, .start-sub {
+    background-color: #3F4778;    
+    width: 20%;
+    font-size: 25px;
+    font-family: 'Rubik One';
+    text-align: center;
+    color: white;
+    transform: translate(-175px);
+    border-radius: 15px;
+}
+.start-sub{
+    background: red;
+    border-color: red;
+    transform: translate(-750px, 80px);
+    border-radius: 15px;
+}
+.start {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
