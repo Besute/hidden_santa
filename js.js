@@ -31,9 +31,9 @@ buttons.forEach((button) => {
 
 function reg(event) {
   event.preventDefault();
-  const regPassword = document.querySelector(".form--pass").value;
-  const logEmail = document.querySelector(".form--email").value;
-  const nameCap = document.querySelector(".form--name").value;
+  let regPassword = document.querySelector(".form--pass").value;
+  let logEmail = document.querySelector(".form--email").value;
+  let nameCap = document.querySelector(".form--name").value;
   document.querySelector(".form--pass").value =
     document.querySelector(".form--name").value =
     document.querySelector(".form--email").value =
@@ -41,20 +41,10 @@ function reg(event) {
   let capName = nameCap;
   let regPass = regPassword;
   let emailLog = logEmail;
-
+  console.log(capName)
   fetch(
     `http://89.223.123.82:5678/get?one=${capName}&two=${regPass}&three=${emailLog}`
   )
-    .then((data) => {
-      console.log(data);
-      return data.json();
-    })
-    .catch((err) => {
-      let errrr = err;
-    })
-    .then((data) => {
-      console.log(data);
-    });
 }
 
 document.querySelector(".register").addEventListener("submit", reg);
@@ -72,10 +62,10 @@ document.querySelector(".header-text-3").addEventListener("click", (e) => {
 
 document.querySelector(".form--2").addEventListener("submit", (e) => {
   e.preventDefault();
-  const enteredPassword = document.querySelector(".form--pass--2").value;
-  const emailReal = document.querySelector(".form--email--2").value;
-  const nameUser = document.querySelector(".form--name--2").value;
-  const enteredEmail = document.querySelector(".form--login--2").value;
+  let enteredPassword = document.querySelector(".form--pass--2").value;
+  let emailReal = document.querySelector(".form--email--2").value;
+  let nameUser = document.querySelector(".form--name--2").value;
+  let enteredEmail = document.querySelector(".form--login--2").value;
   document.querySelector(".form--pass--2").value =
     document.querySelector(".form--name--2").value =
     document.querySelector(".form--email--2").value =
@@ -102,17 +92,10 @@ document.querySelector(".form--2").addEventListener("submit", (e) => {
 
 document.querySelector(".gameStarter").addEventListener("submit", (e) => {
   e.preventDefault();
-  document.querySelector(".start-email").value = document.querySelector(
-    ".start-pass"
-  ).value = "";
-});
-document.querySelector(".gameStarter").addEventListener("submit", (e) => {
-  e.preventDefault();
   let startEm = document.querySelector(".start-email").value;
   let pass = document.querySelector(".start-pass").value;
   fetch(`http://89.223.123.82:5678/get?one=${startEm}&two=${pass}`)
     .then((data) => {
-      console.log(data);
       return data.json();
     })
     .catch((err) => {
@@ -121,4 +104,7 @@ document.querySelector(".gameStarter").addEventListener("submit", (e) => {
     .then((data) => {
       console.log(data);
     });
+  document.querySelector(".start-email").value = document.querySelector(
+    ".start-pass"
+  ).value = "";
 });
