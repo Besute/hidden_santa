@@ -14,7 +14,6 @@
         <div class="header-text-2 noselect">Вход</div>
         <div class="header-text-3 noselect">Запуск игры</div>
       </div>
-      <form action="allow.php" method="post"></form>
     </header>
     <section class="section--1">
       <div class="lobby">
@@ -58,129 +57,57 @@
       <div class="section--2--div--2">
         <img
           src="1514310389167437951.png"
-          style="transform: translate(300px, 100px)"
+          class="img"
         />
-        <h1 class="text--section--2--2">
-          <span style="color: red">СТАНЬ</span> ИНИЦИАТОРОМ ИГРЫ!
-        </h1>
-        <div class="lets-Start">
+        <h1 class="text--section--2--2"><span style="color: red;">СТАНЬ</span> ИНИЦИАТОРОМ ИГРЫ!</h1>
+        <div class="lets-Start">        
           <p1 class="lets-Start-1">Что надо делать?</p1>
-          <br />
-          <p1 class="lets-Start-2"
-            >Заполни все поля и нажми
-            <span class="get-ready">“Готово”</span></p1
-          >
-          <br />
-          <p1 class="lets-Start-3"
-            >Твой email - логин, сообщи его с паролем своим друзьям</p1
-          >
+          <br>
+          <p1 class="lets-Start-2">Заполни все поля и нажми <span class="get-ready">“Готово”</span></p1>
+          <br>
+          <p1 class="lets-Start-3">Твой email - логин, сообщи его с паролем своим друзьям</p1>
         </div>
+
       </div>
       <form class="register">
         <div class="buttons--selectors">
-          <input
-            type="name"
-            name="name"
-            class="form--name"
-            placeholder="Введите ваше имя"
-          />
-          <input
-            type="email"
-            name="email"
-            class="form--email"
-            placeholder="Введите ваш email"
-          />
-          <input
-            type="password"
-            name="password"
-            class="form--pass"
-            placeholder="Введите ваш пароль"
-          />
-          <input type="submit" class="form--sub" value="Ввод" />
+          <input type="name" name="name" class="form--name"  placeholder="Введите ваше имя" />
+          <input type="email" name="email"  class="form--email" placeholder="Введите ваш email"/>
+          <input type="password" name="password"  class="form--pass" placeholder="Введите ваше пароль">
+          <input type="submit" class="form--sub" value="Ввод">
           <!-- <span class="getting--time">Выберите, когда начнется игра в часах</span><br> -->
           <!-- <div id="output"></div> -->
         </div>
-        <p
-          style="
-            font-family: 'Rubik One';
-            font-size: 30px;
-            color: #3f4778;
-            transform: translate(75px, 100px);
-          "
-        >
-          ИЛИ
-        </p>
+        <p style="font-family: 'Rubik One'; font-size: 30px; color: #3F4778; transform: translate(75px, 100px);">ИЛИ</p>
       </form>
     </section>
-    <section class="section--3" data-set="3">
-      <h1 class="join-friends--h1">
-        <span style="color: red">ПРИСОЕДИНЯЙСЯ</span> К СВОИМ ДРУЗЬЯМ!
-      </h1>
-      <h2
-        class="join-friends"
-        style="margin-top: 100px; margin-left: 130px; font-size: 30px"
-      >
-        Вводи данные в поля ниже!
-      </h2>
+    <section class="section--3"data-set="3">        
+      <h1 class="join-friends"><span style="color: red;">ПРИСОЕДИНЯЙСЯ</span> К СВОИМ ДРУЗЬЯМ!</h1>
+      <h2 class="join-friends" style="margin-top: 100px; margin-left: 130px; font-size: 30px;">Вводи данные в поля ниже!</h2>        
       <form class="form--2">
         <div class="buttons--selectors--2">
-          <input
-            type="name"
-            name="name"
-            class="form--name--2"
-            placeholder="Введите ваше имя"
-          />
-          <input
-            type="email"
-            name="email"
-            class="form--email--2"
-            placeholder="Введите ваш email"
-          />
-          <input
-            type="password"
-            name="password"
-            class="form--pass--2"
-            placeholder="Введите пароль"
-          />
-          <input
-            type="email"
-            name="login"
-            class="form--login--2"
-            placeholder="Email создателя"
-          />
-          <input
-            type="submit"
-            class="form--sub--2"
-            value="Ввод"
-            onclick="myfunction_clickevent()"
-          />
+          <input type="name" name="name" class="form--name--2"  placeholder="Введите ваше имя" />
+          <input type="email" name="email"  class="form--email--2" placeholder="Введите ваш email"/>
+          <input type="password" name="password"  class="form--pass--2" placeholder="Введите пароль">
+          <input type="email" name="login" class="form--login--2" placeholder="Email создателя">
+          <input type="submit" class="form--sub--2" value="Ввод">
         </div>
       </form>
     </section>
 
     <section class="start">
-      <h1 class="start--button"><span style="color: red">НАЧАТЬ</span> ИГРУ</h1>
+      <h1 class="start--button"><span style="color: red;">НАЧАТЬ</span> ИГРУ</h1>
       <form class="gameStarter">
         <div class="btns">
-          <input
-            type="email"
-            name="login"
-            placeholder="Почта организатора"
-            class="start-email"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Пароль"
-            class="start-pass"
-          />
-          <input type="submit" name="submit" value="Начать" class="start-sub" />
+          <input type="email" name="login" placeholder="Почта организатора" class="start-email">
+          <input type="password" name="password" placeholder="Пароль" class="start-pass">
+          <input type="submit" name="submit" value="Начать" class="start-sub">
         </div>
       </form>
     </section>
-
-    <footer class="section--4">
-      <h1 class="h1--presents">СПАСИБО, ЧТО ВЫБРАЛИ НАС</h1>
-    </footer>
+<!--     
+    <section class="section--4">
+      <h1 class="h1--presents">Что подарить друзьям?</h1>
+    </section> -->
   </body>
 </html>
